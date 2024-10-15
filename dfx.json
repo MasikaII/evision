@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "evision_backend": {
+      "candid": "src/evision_backend/evision_backend.did",
+      "package": "evision_backend",
+      "type": "rust"
+    },
+    "evision_frontend": {
+      "dependencies": [
+        "evision_backend"
+      ],
+      "source": [
+        "src/evision_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "evision_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
